@@ -175,6 +175,8 @@ type AdaptationSet struct {
 	ID                 *string           `xml:"id,attr"`
 	SegmentAlignment   *bool             `xml:"segmentAlignment,attr"`
 	Lang               *string           `xml:"lang,attr"`
+	Original           *bool             `xml:"original,attr,omitempty"`
+	Impaired           *bool             `xml:"impaired,attr,omitempty"`
 	Group              *string           `xml:"group,attr"`
 	PAR                *string           `xml:"par,attr"`
 	MinBandwidth       *string           `xml:"minBandwidth,attr"`
